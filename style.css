@@ -1,0 +1,72 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 212, 212);
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    margin-top: 20px;
+    color: rgb(198, 0, 0);
+    font-family: Impact, fantasy;
+}
+.social{
+    font-size: 30px;
+ margin-top: 5px;
+}
+a{
+ color: transparent;
+}
+i{
+ color: rgb(198, 0, 0);
+}
+.jogo-da-memoria{
+    height: 38vw;
+    width: 38vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.carta{
+    height: calc(33.333% - 10px);
+    width: calc(25% - 10px);
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.3);
+    cursor: pointer;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .9s;
+
+}
+.carta:active{
+    transform: scale(0.97);
+    transition: transform .3s;
+}
+.frente, .verso{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    backface-visibility: hidden;
+    
+}
+.frente{
+    transform: rotateY(180deg);
+}
+/* ANIMAÇÃO DE VIRADA */
+.virada{
+    transform: rotateY(180deg);
+}
