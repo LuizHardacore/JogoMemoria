@@ -39,7 +39,7 @@ function desabilitarcarta(){
 
     contador++;
     resetar();
-    if(contador == 6) alert("VOCÊ GANHOU!Não fume perto de animais e crianças.")
+    if(contador == 6) alert("VOCÊ GANHOU!Não fume perto de animais e crianças.");
 }
 
 function desvirarCarta(){
